@@ -1,0 +1,19 @@
+"Dadas las tres calificaciones de un estudiante en la materia de algoritmia, calcule:
+a. Determinar su promedio
+b. Indicar si el estudiante aprobó o no el curso.
+Un estudiante aprueba la materia si el promedio es mayor o igual a 70 puntos."
+Entero cal1, cal2, cal3, promedio
+Inicio 
+Escriba "Calificación 1"
+Lea cal1
+Escriba "Calificación 2"
+Lea cal2
+Escriba "Calificación 3"
+Lea cal3
+promedio <- (cal1 + cal2 + cal3) / 3
+Si promedio >= 70 Entonces
+    Escriba "Aprobado"
+Sino
+    Escriba "Reprobado"
+Fin Si
+Fin

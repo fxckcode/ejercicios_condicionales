@@ -1,0 +1,15 @@
+"Leer dos números, determinar cuál es el mayor de los dos y mostrar ese número en pantalla
+con el mensaje “Es el número mayor”.
+"
+Entero num1, num2
+Inicio
+Escriba "Ingrese el primero numero: "
+lea num1
+Escriba "Ingrese el segundo numero: "
+lea num2
+si num1 > num2 Entonces
+Escriba num1, " El primer es el numero mayor"
+sino
+Escriba num2, " El segundo es el numero mayor"
+Fin si
+Fin

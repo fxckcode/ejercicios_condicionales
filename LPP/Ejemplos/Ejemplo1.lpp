@@ -1,0 +1,9 @@
+"Diseñar un algoritmo que dada la edad de una persona indique si es MAYOR o MENOR de edad."
+Entero edad
+inicio
+Escriba "Cual es tu edad:"
+Lea edad
+Si edad > 17 Entonces
+    Escriba "Eres mayor de edad"
+Fin si
+Fin

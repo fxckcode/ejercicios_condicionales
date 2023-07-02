@@ -1,0 +1,14 @@
+"Escribir un algoritmo que, ingresada una calificación del 1 al 10, muestre por pantalla el
+siguiente mensaje. Cuando la calificación sea de 7 o superior mostrar “APROBADO” y si no
+obtuvo esa calificación mostrar “REPROBADO”.
+"
+Entero calificacion
+Inicio
+Escriba "Ingrese la calificacion: "
+lea calificacion
+si calificacion >= 7 Entonces
+	Escriba "APROBADO"
+sino
+	Escriba "REPROBADO"
+fin si
+fin

@@ -1,0 +1,18 @@
+"Leer 3 número distintos y determinar cuál es el menor."
+Entero num1, num2, num3, menor
+Inicio
+Escriba "Ingrese el primero numero: "
+lea num1
+Escriba "Ingrese el segundo numero: "
+lea num2
+Escriba "Ingrese el tercer numero: "
+lea num3
+	menor <- num1
+si num2 < menor Entonces
+	menor <- num2
+Fin si
+si num3 < menor Entonces
+	menor <- num3
+Fin si
+Escriba "El numero menor es: ", menor
+Fin

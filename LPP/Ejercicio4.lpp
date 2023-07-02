@@ -1,0 +1,12 @@
+"En un estacionamiento cobran $1.500 por hora. Diseñe un algoritmo que determine cuanto
+debe pagar un cliente por el estacionamiento de su vehículo, conociendo el tiempo de
+estacionamiento en horas."
+
+Entero cantHoras, total
+inicio
+Escriba "Cantidad de horas: "
+lea cantHoras
+total <- cantHoras * 1500
+Escriba "Total a pagar: ", total
+fin
+

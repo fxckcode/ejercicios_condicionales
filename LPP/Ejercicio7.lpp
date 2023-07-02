@@ -1,0 +1,22 @@
+"A un trabajador le descuentan de su sueldo el 12% si su sueldo es menor o igual a 500000, por
+encima de 500000 y hasta 1000000 el 15%, y por encima de 1000000 el 18%. Realice un
+algoritmo que calcule el descuento y sueldo total que recibe el trabajador dado su sueldo
+inicial.
+"
+ENTERO sueldoInicial, descuento, sueldoTotal
+Inicio
+Escriba "Cual es su sueldo: "
+lea sueldoInicial
+SI sueldoInicial <= 500000 ENTONCES
+    descuento <- sueldoInicial * 0.12
+SINO SI sueldoInicial <= 1000000 ENTONCES
+    descuento <- sueldoInicial * 0.15
+SINO
+    descuento <- sueldoInicial * 0.18
+FIN SI
+
+sueldoTotal <- sueldoInicial - descuento
+
+Escriba "Sueldo total: ", sueldoTotal
+Fin si
+fin

@@ -1,0 +1,21 @@
+"Los empleados de una fábrica trabajan en dos turnos: diurno y nocturno. Se desea calcular el
+jornal diario de acuerdo con los siguientes puntos:
+La tarifa de las horas diurnas es de 10 dólares.
+La tarifa de las horas nocturnas es de 15 dólares.
+Codifique un algoritmo que solicite el turno de trabajo y el número de horas trabajadas y
+posteriormente calcule el valor a pagar."
+Cadena [32] turno
+Entero cantHoras, total
+Inicio
+Escriba "Cual es su turno (diurno o nocturno): "
+lea turno
+Escriba "Cual es la cantidad de horas: "
+lea cantHoras
+si turno = "diurno" Entonces
+	total <- cantHoras * 10
+fin si
+si turno = "nocturno" Entonces
+	total <- cantHoras * 15
+fin si
+Escriba "El total a pagar es: ", total
+fin

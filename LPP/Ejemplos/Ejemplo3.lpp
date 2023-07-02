@@ -1,0 +1,18 @@
+"Diseñe un algoritmo que dado dos números A y B, determine si A es mayor, igual o menor a B."
+Entero a, b
+Inicio
+Escriba "Escriba el numero A: "
+Lea a
+Escriba "Escriba el numero B: "
+Lea b
+Si a > b Entonces
+Escriba "El numero mayor es: ", a
+Sino
+Si a < b Entonces
+Escriba "El numero mayor es: ", b
+Sino
+Escriba "Los numeros son iguales"
+Fin Si
+Fin Si
+Fin
+```
