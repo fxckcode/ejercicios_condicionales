@@ -1,0 +1,21 @@
+"Realizar un login de usuario, solicitando el correo y la contraseña, 
+si el correo=’fund@gmail.com’ y la clave=’123456‘, el sistema mostrará 
+el mensaje “Bienvenidos a Fundamentos de programación”, si los datos son 
+inválidos el sistema deberá mostrar “Error en los datos de ingreso.” "
+
+cadena [20] email
+cadena [20] password
+
+Inicio
+Escriba "Correo: "
+lea email
+Escriba "Contraseña: "
+lea password
+Si email = "fund@gmail.com" Entonces
+	si password = "123456" Entonces
+		Escriba "Bienvenidos a Fundamentos de programación"
+	fin si
+Sino
+	Escriba "Error en los datos de ingreso"
+Fin si
+Fin
