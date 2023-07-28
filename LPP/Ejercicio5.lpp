@@ -13,9 +13,13 @@ Escriba "Cual es la cantidad de horas: "
 lea cantHoras
 si turno = "diurno" Entonces
 	total <- cantHoras * 10
-fin si
+	Escriba "El total a pagar es: ", total
+sino
 si turno = "nocturno" Entonces
 	total <- cantHoras * 15
+	Escriba "El total a pagar es: ", total
+sino
+	Escriba "Error en los datos"
 fin si
-Escriba "El total a pagar es: ", total
+fin si
 fin

@@ -9,10 +9,13 @@
 $turno = readline("Cual es su turno (diurno o nocturno): ");
 $cantHoras = intval(readline("Cual es su cantidad de horas: "));
 $total = 0;
-if ($turno == 'diurno') {
+if ($turno.strtolower() == 'diurno') {
     $total = $cantHoras * 10;
-} elseif ($turno == 'nocturno') {
+    echo "Cantidad a pagar ".$total;
+} elseif ($turno.strtolower() == 'nocturno') {
     $total = $cantHoras * 15;
+    echo "Cantidad a pagar ".$total;
+} else {
+    echo "Error en los datos";
 }
 
-echo "Cantidad a pagar ".$total;

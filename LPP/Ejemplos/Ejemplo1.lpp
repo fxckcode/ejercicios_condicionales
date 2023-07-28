@@ -6,4 +6,6 @@ Lea edad
 Si edad > 17 Entonces
     Escriba "Eres mayor de edad"
 Fin si
+Si edad <= 17 Entonces
+    Escriba "Eres menor de edad"
 Fin

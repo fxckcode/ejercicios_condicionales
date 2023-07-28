@@ -3,9 +3,9 @@ a = int(input("Ingrese el numero A: "))
 b = int(input("Ingrese el numero B: "))
 
 if a > b :
-    print(f"El numero mayor es: {a}");
+    print("El numero A es mayor al numero B");
 elif a < b:
-    print(f"El numero mayor es: {b}")
+    print("El numero A es menor al numero B");
 else:
     print("Los numeros son iguales");
  

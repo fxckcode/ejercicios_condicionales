@@ -7,8 +7,16 @@ Inicio
 Escriba "Ingrese la calificacion: "
 lea calificacion
 si calificacion >= 7 Entonces
-	Escriba "APROBADO"
+	si calificacion <= 10 Entonces
+		Escriba "APROBADO"
+	sino
+		Escriba "Error en los datos"
+	fin si
 sino
+si calificacion < 7 Entonces
 	Escriba "REPROBADO"
+sino
+	Escriba "Error en los datos"
+fin si
 fin si
 fin

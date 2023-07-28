@@ -5,8 +5,10 @@
 
 $calificacion = intval(readline("Ingrese la calificacion: "));
 
-if ($calificacion >= 7) {
+if ($calificacion >= 7 && $calificacion <= 10) {
     echo "APROBADO";
-} else {
+} else if ($calificacion < 7) {
     echo "REPROBADO";
+} else {
+    echo "Error en los datos";
 }

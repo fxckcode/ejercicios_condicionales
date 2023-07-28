@@ -4,9 +4,9 @@ var a = parseInt(prompt("Introduce el numero A: "));
 var b = parseInt(prompt("Introduce el numero B: "));
 
 if (a > b) {
-    alert(`El numero mayor es ${a}`);
+    alert(`El numero A es mayor que el numero B`);
 } else if (a < b) {
-    alert(`El numero mayor es ${b}`);
+    alert(`El numero A es menor que el numero B`);
 } else {
-    alert("Los numeros son iguales");
+    alert("Los dos numeros son iguales");
 }

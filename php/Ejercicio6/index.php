@@ -4,10 +4,14 @@
 // entonces las horas extras se le pagarán a $25 por hora.
 $cantHoras = intval(readline("Cantidad de horas: "));
 $total = 0;
+$normales;
+$extras;
 if ($cantHoras <= 40) {
     $total = $cantHoras * 20;
 } else if ($cantHoras > 40) {
-    $total = $cantHoras * 25;
+    $normales = 40 * 20;
+    $extras = ($cantHoras - 40) * 25;
+    $total = $extras + $normales;
 }
 
 echo "Valor a pagar: ".$total;

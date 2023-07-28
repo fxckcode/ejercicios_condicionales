@@ -4,4 +4,6 @@ $edad = intval(readline("Ingrese su edad: "));
 
 if ($edad >= 18) {
     echo "Usted es mayor de edad";
-} 
+} else {
+    echo "Usted es menor de edad";
+}

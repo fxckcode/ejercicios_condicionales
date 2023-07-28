@@ -4,9 +4,9 @@ $a = intval(readline("Ingrese el numero A: "));
 $b = intval(readline("Ingrese el numero B: "));
 
 if ($a > $b) {
-    echo "El numero mayor es:".$a;
+    echo "El numero A es mayor al numero B";
 } else if ($a < $b) {
-    echo "El numero mayor es:".$b;
+    echo "El numero A es menor al numero B";
 } else {
     echo "Los numeros son iguales";
 }

@@ -9,8 +9,10 @@ var cantHoras = parseInt(prompt("Cantidad de horas trabajadas: "))
 var total;
 if (turno.toLowerCase() == "diurno") {
     total = cantHoras * 10
+    alert(`Total a pagar ${total} dolares`)
 } else if (turno.toLowerCase() == "nocturno") {
     total = cantHoras * 15
+    alert(`Total a pagar ${total} dolares`)
+} else {
+    alert("Error en los datos")
 }
-
-alert(`Total a pagar ${total} dolares`)

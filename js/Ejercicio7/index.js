@@ -9,7 +9,7 @@ var total = 0;
 
 if (sueldo <= 500000) {
     descuento = 0.12
-} else if(sueldo > 500000 && sueldo < 1000000) {
+} else if(sueldo > 500000 && sueldo <= 1000000) {
     descuento = 0.15
 } else if(sueldo > 1000000) {
     descuento = 0.18

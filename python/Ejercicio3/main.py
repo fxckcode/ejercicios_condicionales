@@ -4,7 +4,9 @@
 
 calificacion = int(input("Ingrese la calificacion: "))
 
-if calificacion >= 7:
-    print("APROBADO");
+if calificacion >= 7 and calificacion <= 10:
+    print("APROBADO")
+elif calificacion < 7:
+    print("REPROBADO")
 else:
-    print("REPROBADO");
+    print("Error en los datos")

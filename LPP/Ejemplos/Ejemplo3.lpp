@@ -6,10 +6,10 @@ Lea a
 Escriba "Escriba el numero B: "
 Lea b
 Si a > b Entonces
-Escriba "El numero mayor es: ", a
+Escriba "El numero A es mayor que el numero B"
 Sino
 Si a < b Entonces
-Escriba "El numero mayor es: ", b
+Escriba "El numero A es menor que el numero B"
 Sino
 Escriba "Los numeros son iguales"
 Fin Si
