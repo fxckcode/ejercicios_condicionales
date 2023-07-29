@@ -2,18 +2,20 @@
 a. Determinar su promedio
 b. Indicar si el estudiante aprobó o no el curso.
 Un estudiante aprueba la materia si el promedio es mayor o igual a 70 puntos."
-Entero cal1, cal2, cal3, promedio
+Real cal1, cal2, cal3, promedio
 Inicio 
-Escriba "Calificación 1"
+Escriba "Calificacion 1: "
 Lea cal1
-Escriba "Calificación 2"
+Escriba "Calificacion 2: "
 Lea cal2
-Escriba "Calificación 3"
+Escriba "Calificacion 3: "
 Lea cal3
 promedio <- (cal1 + cal2 + cal3) / 3
 Si promedio >= 70 Entonces
-    Escriba "Aprobado"
+    Escriba "Aprobado, con un promedio de ", promedio
 Sino
-    Escriba "Reprobado"
+Si promedio < 70 Entonces
+    Escriba "Reprobado, con un promedio de ", promedio
 Fin Si
+Fin si
 Fin

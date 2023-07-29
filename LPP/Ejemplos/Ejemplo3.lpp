@@ -1,5 +1,5 @@
 "Diseñe un algoritmo que dado dos números A y B, determine si A es mayor, igual o menor a B."
-Entero a, b
+Real a, b
 Inicio
 Escriba "Escriba el numero A: "
 Lea a

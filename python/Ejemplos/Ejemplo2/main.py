@@ -3,14 +3,23 @@
 # b. Indicar si el estudiante aprobó o no el curso.
 # Un estudiante aprueba la materia si el promedio es mayor o igual a 70 puntos.
 
-cal1 = int(input("Ingrese la primera calificación: "))
-cal2 = int(input("Ingrese la segunda calificación: "))
-cal3 = int(input("Ingrese la tercera calificación: "))
+cal1 = input("Ingrese la primera calificación: ")
+cal2 = input("Ingrese la segunda calificación: ")
+cal3 = input("Ingrese la tercera calificación: ")
 
-promedio = (cal1 + cal2 + cal3) / 3
 
-if promedio >= 70:
-    print("Aprobado")
+if cal1.isdigit() and cal2.isdigit() and cal3.isdigit():
+    cal1 = float(cal1)
+    cal2 = float(cal2)
+    cal3 = float(cal3)
+    promedio = (cal1 + cal2 + cal3) / 3
+    if promedio >= 70:
+        print(f"Aprobado, con un promedio de {round(promedio, 1)}")
+    else:
+        print(f"Reprobado, con un promedio de {round(promedio, 1)}")
 else:
-    print("Reprobado")
+    print("Por favor ingresar un numero valido")
+
+
+
     
