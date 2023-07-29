@@ -6,6 +6,8 @@ var calificacion = parseInt(prompt("Ingrese la calificación: "))
 
 if (calificacion >= 7 && calificacion <= 10) {
     alert("APROBADO")
-} else if (calificacion < 7) {
+} else if (calificacion < 7 && calificacion > 0) {
     alert("REPROBADO")
+} else {
+    alert("Error en los datos")
 }

@@ -5,7 +5,11 @@ Escriba "Cual es tu edad:"
 Lea edad
 Si edad > 17 Entonces
     Escriba "Eres mayor de edad"
-Fin si
+sino
 Si edad <= 17 Entonces
     Escriba "Eres menor de edad"
+Sino
+    Escriba "Error en los datos"
+fin si
+fin si
 Fin

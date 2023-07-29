@@ -13,8 +13,12 @@ si calificacion >= 7 Entonces
 		Escriba "Error en los datos"
 	fin si
 sino
-si calificacion < 7 Entonces
-	Escriba "REPROBADO"
+si calificacion < 7  Entonces
+	si calificacion > 0 entonces
+		Escriba "REPROBADO"
+	sino
+		Escriba "Error en los datos"
+	fin si
 sino
 	Escriba "Error en los datos"
 fin si
