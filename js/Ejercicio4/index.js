@@ -2,7 +2,11 @@
 // debe pagar un cliente por el estacionamiento de su vehículo, conociendo el tiempo de
 // estacionamiento en horas.
 
-var cantHoras = parseInt(prompt("Cantidad de horas en el estacionamiento: "))
-var total = cantHoras * 1500
+var cantHoras = parseFloat(prompt("Cantidad de horas en el estacionamiento: "))
 
-alert(`Total a pagar: ${total}`)
+if (isNaN(cantHoras)) {
+    alert("Por favor digite un numero valido")
+} else {
+    var total = cantHoras * 1500
+    alert(`Total a pagar: ${total}`)
+}

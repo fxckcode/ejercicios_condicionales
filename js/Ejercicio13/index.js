@@ -17,12 +17,17 @@ var salario = parseFloat(prompt("Salario: "))
 var tiempo_servicio = parseInt(prompt("Tiempo de servicio: "))
 
 
-if (genero == 2 && tiempo_servicio > 5) {
-    alert(`Bonificacion 20%: ${salario * 0.20}, Total ${salario + (salario * 0.20)} `)
-} else if (genero == 2 && tiempo_servicio <= 5) {
-    alert(`Bonificacion 15%: ${salario * 0.15}, Total ${salario + (salario * 0.15)}`)
-} else if (genero == 1 && tiempo_servicio > 6) {
-    alert(`Bonificacion 20%: ${salario * 0.20}, Total ${salario + (salario * 0.20)} `)
-} else if (genero == 1 && tiempo_servicio > 1 && tiempo_servicio <= 6) {
-    alert(`Bonificacion 15%: ${salario * 0.15}, Total ${salario + (salario * 0.15)}`)
+if (isNaN(genero) || isNaN(salario) || isNaN(tiempo_servicio)) {
+    alert("Error en los datos")
+} else {
+    if (genero == 2 && tiempo_servicio > 5) {
+        alert(`${nombre}, su bonificacion es del 20%: ${salario * 0.20} y el total es ${salario + (salario * 0.20)} `)
+    } else if (genero == 2 && tiempo_servicio <= 5) {
+        alert(`${nombre}, su bonificacion es del 15%: ${salario * 0.15} y el total es ${salario + (salario * 0.15)}`)
+    } else if (genero == 1 && tiempo_servicio > 6) {
+        alert(`${nombre}, su bonificacion es del 20%: ${salario * 0.20} y el total es ${salario + (salario * 0.20)} `)
+    } else if (genero == 1 && tiempo_servicio > 1 && tiempo_servicio <= 6) {
+        alert(`${nombre}, su bonificacion es del 15%: ${salario * 0.15} y el total es ${salario + (salario * 0.15)}`)
+    }
 }
+

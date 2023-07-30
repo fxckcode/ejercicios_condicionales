@@ -13,17 +13,26 @@ del Salario Básico. -->
 <?php 
 
 $nombre = readline("Cual es su nombre: ");
-$genero = intval(readline("Genero (1-masculino, 2-femenino): "));
-$salario = floatval(readline("Salario: "));
-$tiempo_servicio = intval(readline("Tiempo de servicio: "));
+$genero = readline("Genero (1-masculino, 2-femenino): ");
+$salario = readline("Salario: ");
+$tiempo_servicio = readline("Tiempo de servicio: ");
 
-if ($genero == 2 && $tiempo_servicio > 5) {
-    echo "Bonificacion 20%: ".($salario * 0.20).", Total ".($salario + ($salario * 0.20));
-} else if ($genero == 2 && $tiempo_servicio <= 5) {
-    echo "Bonificacion 15%: ".($salario * 0.15).", Total ".($salario + ($salario * 0.15));
-} else if ($genero == 1 && $tiempo_servicio > 6) {
-    echo "Bonificacion 20%: ".($salario * 0.20).", Total".($salario + ($salario * 0.20));
-} else if ($genero == 1 && $tiempo_servicio > 1 && $tiempo_servicio <= 6) {
-    echo "Bonificacion 15%: ".($salario * 0.15).", Total ".($salario + ($salario * 0.15));
+if (is_numeric($genero) && is_numeric($salario) && is_numeric($tiempo_servicio)) {
+    $genero = intval($genero);
+    $salario = floatval($salario);
+    $tiempo_servicio = intval($tiempo_servicio);
+    if ($genero == 2 && $tiempo_servicio > 5) {
+        echo $nombre.", su bonificacion es del 20%: ".($salario * 0.20)." y el total es: ".($salario + ($salario * 0.20));
+    } else if ($genero == 2 && $tiempo_servicio <= 5) {
+        echo $nombre.", su bonificacion es del 15%: ".($salario * 0.15)." y el total es: ".($salario + ($salario * 0.15));
+    } else if ($genero == 1 && $tiempo_servicio > 6) {
+        echo $nombre.", su bonificacion es del 20%: ".($salario * 0.20)." y el total es: ".($salario + ($salario * 0.20));
+    } else if ($genero == 1 && $tiempo_servicio > 1 && $tiempo_servicio <= 6) {
+        echo $nombre.", su bonificacion es del 15%: ".($salario * 0.15)." y el total es: ".($salario + ($salario * 0.15));
+    }
+} else {
+    echo "Error en los datos";
 }
+
+
 

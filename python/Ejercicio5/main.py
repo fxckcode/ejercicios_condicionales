@@ -6,13 +6,18 @@
 # posteriormente calcule el valor a pagar.
 
 turno = input("Cual es su turno (diurno o nocturno): ")
-cantHoras = int(input("Cual es la cantidad de horas: "))
+cantHoras = input("Cual es la cantidad de horas: ")
 total = 0
-if turno.lower() == 'diurno':
-    total = cantHoras * 10
-    print(f"Cantidad a pagar: {total}")
-elif turno.lower() == 'nocturno':
-    total = cantHoras * 15
-    print(f"Cantidad a pagar: {total}")
+
+if cantHoras.replace('.', '', 1).isdigit():
+    cantHoras = float(cantHoras)
+    if turno.lower() == 'diurno':
+        total = cantHoras * 10
+        print(f"Cantidad a pagar: {total}")
+    elif turno.lower() == 'nocturno':
+        total = cantHoras * 15
+        print(f"Cantidad a pagar: {total}")
+    else:
+        print("Error en los datos")
 else:
     print("Error en los datos")

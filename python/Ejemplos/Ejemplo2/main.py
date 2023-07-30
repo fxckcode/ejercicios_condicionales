@@ -8,7 +8,7 @@ cal2 = input("Ingrese la segunda calificación: ")
 cal3 = input("Ingrese la tercera calificación: ")
 
 
-if cal1.isdigit() and cal2.isdigit() and cal3.isdigit():
+if cal1.replace('.', '', 1).isdigit() and cal2.replace('.', '', 1).isdigit() and cal3.replace('.', '', 1).isdigit():
     cal1 = float(cal1)
     cal2 = float(cal2)
     cal3 = float(cal3)

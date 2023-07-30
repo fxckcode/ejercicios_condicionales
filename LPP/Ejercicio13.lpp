@@ -28,23 +28,23 @@ Escriba "Tiempo de servicio"
 lea tiempo_servicio
 Si genero = 2 Entonces
 	Si tiempo_servicio > 5 Entonces
-		Escriba "Bonificacion 20%: ", salario * 0.20, " Total: ", salario + (salario * 0.20)
+		Escriba nombre,", su bonificacion es del 20%: ", salario * 0.20, " y el total es: ", salario + (salario * 0.20)
 	Fin si
 Fin si
 Si genero = 2 Entonces
 	Si tiempo_servicio <= 5 Entonces
-		Escriba "Bonificacion 15%: ", salario * 0.15, " Total: ", salario + (salario * 0.15)
+		Escriba nombre,", su bonificacion es del 20%: ", salario * 0.15, " y el total es: ", salario + (salario * 0.15)
 	Fin si
 Fin si
 Si genero = 1 Entonces
 	Si tiempo_servicio > 6 Entonces
-		Escriba "Bonificacion 20%: ", salario * 0.20, " Total: ", salario + (salario * 0.20)
+		Escriba nombre,", su bonificacion es del 20%: ", salario * 0.20, " y el total es: ", salario + (salario * 0.20)
 	Fin si
 Fin si
 Si genero = 1 Entonces
 	Si tiempo_servicio > 1 Entonces
 		Si tiempo_servicio <= 6 Entonces 
-			Escriba "Bonificacion 15%: ", salario * 0.15, " Total: ", salario + (salario * 0.15)
+			Escriba nombre,", su bonificacion es del 20%: ", salario * 0.15, " y el total es: ", salario + (salario * 0.15)
 		Fin si
 	Fin si
 Fin si

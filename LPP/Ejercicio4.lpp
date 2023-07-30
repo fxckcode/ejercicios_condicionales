@@ -2,7 +2,7 @@
 debe pagar un cliente por el estacionamiento de su vehículo, conociendo el tiempo de
 estacionamiento en horas."
 
-Entero cantHoras, total
+real cantHoras, total
 inicio
 Escriba "Cantidad de horas: "
 lea cantHoras

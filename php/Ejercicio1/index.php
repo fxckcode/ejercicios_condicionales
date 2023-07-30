@@ -5,8 +5,16 @@
 $numero1 = readline("Ingrese el primer numero: ");
 $numero2 = readline("Ingrese el segundo numero: ");
 
-if ($numero1 > $numero2) {
-    echo $numero1." El primer numero es el mayor";
+if (is_numeric($numero1) && is_numeric($numero2)) {
+    $numero1 = floatval($numero1);
+    $numero2 = floatval($numero2);
+    if ($numero1 > $numero2) {
+        echo $numero1." El primer numero es el mayor";
+    } else if ($numero1 < $numero2){
+        echo $numero2." El segundo numero es le mayor";
+    } else if ($numero1 == $numero2) {
+        echo "Ambos numeros son iguales";
+    }
 } else {
-    echo $numero2." El segundo numero es le mayor";
+    echo "Por favor ingresar un numero valido";
 }

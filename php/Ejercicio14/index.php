@@ -12,19 +12,29 @@ Acorde a los datos recolectados identificar si el suelo es apto para la siembra 
 
 <?php
 
-$ph = floatval(readline("Fosforo: "));
-$materia_organica = floatval(readline("Materia Organica: "));
-$fosforo = floatval(readline("Fosforo: "));
-$calcio = floatval(readline("Calcio: "));
-$magnesio = floatval(readline("Magnesio: "));
-$potasio = floatval(readline("Potasio: "));
-$aluminio = floatval(readline("Aluminio: "));
+$ph = readline("Fosforo: ");
+$materia_organica = readline("Materia Organica: ");
+$fosforo = readline("Fosforo: ");
+$calcio = readline("Calcio: ");
+$magnesio = readline("Magnesio: ");
+$potasio = readline("Potasio: ");
+$aluminio = readline("Aluminio: ");
 
-if ($ph >= 5 && $aluminioph <= 5.5 && $materia_organica > 8 && $fosforo > 30 && $calcio > 3 && $magnesio > 0.9 && $potasio > 0.4 && $aluminio < 1) {
-    Echo "El suelo es apto";
+if (is_numeric($ph) && is_numeric($materia_organica) && is_numeric($fosforo) && is_numeric($calcio) && is_numeric($magnesio) && is_numeric($potasio) && is_numeric($aluminio)) {
+    $ph = floatval($ph);
+    $materia_organica = floatval($materia_organica);
+    $fosforo = floatval($fosforo);
+    $calcio = floatval($calcio);
+    $magnesio = floatval($magnesio);
+    $potasio = floatval($potasio);
+    $aluminio = floatval($aluminio);
+    if ($ph >= 5 && $aluminioph <= 5.5 && $materia_organica > 8 && $fosforo > 30 && $calcio > 3 && $magnesio > 0.9 && $potasio > 0.4 && $aluminio < 1) {
+        Echo "El suelo es apto";
+    } else {
+        Echo "El suelo no es apto";
+    }
 } else {
-    Echo "El suelo no es apto";
+    echo "Error en los datos";
 }
-
 
 ?>

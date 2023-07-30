@@ -3,17 +3,21 @@
 // algoritmo que calcule el descuento y sueldo total que recibe el trabajador dado su sueldo
 // inicial.
 
-var sueldo = parseInt(prompt("Cual es su sueldo"))
+var sueldo = parseFloat(prompt("Cual es su sueldo"))
 var descuento = 0;
 var total = 0;
 
-if (sueldo <= 500000) {
-    descuento = 0.12
-} else if(sueldo > 500000 && sueldo <= 1000000) {
-    descuento = 0.15
-} else if(sueldo > 1000000) {
-    descuento = 0.18
+if (isNaN(sueldo)) {
+    alert("Error en los datos")
+} else {
+    if (sueldo <= 500000) {
+        descuento = 0.12
+    } else if(sueldo > 500000 && sueldo <= 1000000) {
+        descuento = 0.15
+    } else if(sueldo > 1000000) {
+        descuento = 0.18
+    }
+    
+    total  = sueldo - (sueldo * descuento)
+    alert(`El total con el descuento aplicado es: ${total}`)
 }
-
-total  = sueldo - (sueldo * descuento)
-alert(`El total con el descuento aplicado es: ${total}`)

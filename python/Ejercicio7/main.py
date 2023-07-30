@@ -4,16 +4,21 @@
 # inicial.
 
 
-sueldo = int(input("Cual es su sueldo: "))
+sueldo = input("Cual es su sueldo: ")
 descuento = 0
 total = 0
 
-if sueldo <= 500000:
-    descuento = 0.12
-elif sueldo > 500000 and sueldo <= 1000000:
-    descuento = 0.15
-elif sueldo > 1000000:
-    descuento = 0.18
+if sueldo.replace('.', '', 1).isdigit():
+    sueldo = float(sueldo)
 
-total = sueldo - (sueldo * descuento)
-print(f"El total con el descuento aplicado es: {total}") 
+    if sueldo <= 500000:
+        descuento = 0.12
+    elif sueldo > 500000 and sueldo <= 1000000:
+        descuento = 0.15
+    elif sueldo > 1000000:
+        descuento = 0.18
+
+    total = sueldo - (sueldo * descuento)
+    print(f"El total con el descuento aplicado es: {round(total, 1)}") 
+else:
+    print("Error en los datos")

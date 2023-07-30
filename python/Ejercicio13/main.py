@@ -12,16 +12,23 @@
 # del Salario Básico.
 
 nombre = input("Cual es su nombre: ")
-genero = int(input("Genero (1-masculino, 2-femenino): "))
-salario = float(input("Salario: "))
-tiempo_servicio = int(input("Tiempo de servicio: "))
+genero = input("Genero (1-masculino, 2-femenino): ")
+salario = input("Salario: ")
+tiempo_servicio = input("Tiempo de servicio: ")
 
 
-if genero == 2 and tiempo_servicio > 5:
-    print(f"Bonificacion 20%: { round(salario * 0.20, 2)}, Total { round(salario + (salario * 0.20), 2)} ")
-elif genero == 2 and tiempo_servicio <= 5:
-    print(f"Bonificacion 15%: { round(salario * 0.15, 2)}, Total { round(salario + (salario * 0.15), 2)} ")
-elif genero == 1 and tiempo_servicio > 6:
-    print(f"Bonificacion 20%: { round(salario * 0.20, 2)}, Total { round(salario + (salario * 0.20), 2)} ")
-elif genero == 1 and tiempo_servicio > 1 and tiempo_servicio <= 6:
-    print(f"Bonificacion 15%: { round(salario * 0.15, 2)}, Total { round(salario + (salario * 0.15), 2)} ")
+if genero.isdigit() and salario.replace('.', '', 1).isdigit() and tiempo_servicio.isdigit():
+    genero = int(genero)
+    salario = float(salario)
+    tiempo_servicio = int(tiempo_servicio)
+    if genero == 2 and tiempo_servicio > 5:
+        print(f"{nombre}, su bonificacion es de 20%: { round(salario * 0.20, 2)} y el Total es: { round(salario + (salario * 0.20), 2)} ")
+    elif genero == 2 and tiempo_servicio <= 5:
+        print(f"{nombre}, su bonificacion es de 15%: { round(salario * 0.15, 2)} y el Total es: { round(salario + (salario * 0.15), 2)} ")
+    elif genero == 1 and tiempo_servicio > 6:
+        print(f"{nombre}, su bonificacion es de 20%: { round(salario * 0.20, 2)} y el Total es: { round(salario + (salario * 0.20), 2)} ")
+    elif genero == 1 and tiempo_servicio > 1 and tiempo_servicio <= 6:
+        print(f"{nombre}, su bonificacion es de 15%: { round(salario * 0.15, 2)} y el Total es: { round(salario + (salario * 0.15), 2)} ")
+
+else:
+    print("Error en los datos")

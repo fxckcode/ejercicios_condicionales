@@ -2,7 +2,7 @@
 a = input("Ingrese el numero A: ")
 b = input("Ingrese el numero B: ")
 
-if a.isdigit() and b.isdigit():
+if a.replace('.', '', 1).isdigit() and b.replace('.', '', 1).isdigit():
     a = float(a) 
     b = float(b)
     if a > b :

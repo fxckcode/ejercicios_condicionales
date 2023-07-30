@@ -2,11 +2,15 @@
 # siguiente mensaje. Cuando la calificación sea de 7 o superior mostrar “APROBADO” y si no
 # obtuvo esa calificación mostrar “REPROBADO”.
 
-calificacion = int(input("Ingrese la calificacion: "))
+calificacion = input("Ingrese la calificacion: ")
 
-if calificacion >= 7 and calificacion <= 10:
-    print("APROBADO")
-elif calificacion < 7 and calificacion > 0:
-    print("REPROBADO")
+if calificacion.isdigit():
+    calificacion = int(calificacion)
+    if calificacion >= 7 and calificacion <= 10:
+        print("APROBADO")
+    elif calificacion < 7 and calificacion > 0:
+        print("REPROBADO")
+    else:
+        print("Error en los datos")
 else:
     print("Error en los datos")

@@ -17,8 +17,14 @@ var magnesio = parseFloat(prompt("Magnesio: "))
 var potasio = parseFloat(prompt("Potasio: "))
 var aluminio = parseFloat(prompt("Aluminio: "))
 
-if (ph >= 5 && ph <= 5.5 && materia_organica > 8 && fosforo > 30 && calcio > 3 && magnesio > 0.9 && potasio > 0.4 && aluminio < 1) {
-    alert("El suelo es apto")
+
+if (isNaN(ph) || isNaN(materia_organica) || isNaN(fosforo) || isNaN(calcio) || isNaN(magnesio) || isNaN(potasio) || isNaN(aluminio)) {
+    alert("Error en los datos")
 } else {
-    alert("El suelo no es apto")
+    if (ph >= 5 && ph <= 5.5 && materia_organica > 8 && fosforo > 30 && calcio > 3 && magnesio > 0.9 && potasio > 0.4 && aluminio < 1) {
+        alert("El suelo es apto")
+    } else {
+        alert("El suelo no es apto")
+    }
 }
+

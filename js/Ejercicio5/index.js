@@ -5,14 +5,20 @@
 // Codifique un algoritmo que solicite el turno de trabajo y el número de horas trabajadas y
 // posteriormente calcule el valor a pagar.
 var turno = prompt("Cual es su turno (diurno o nocturno): ")
-var cantHoras = parseInt(prompt("Cantidad de horas trabajadas: "))
+var cantHoras = parseFloat(prompt("Cantidad de horas trabajadas: "))
 var total;
-if (turno.toLowerCase() == "diurno") {
-    total = cantHoras * 10
-    alert(`Total a pagar ${total} dolares`)
-} else if (turno.toLowerCase() == "nocturno") {
-    total = cantHoras * 15
-    alert(`Total a pagar ${total} dolares`)
-} else {
+
+if (isNaN(cantHoras)) {
     alert("Error en los datos")
+} else {
+    if (turno.toLowerCase() == "diurno") {
+        total = cantHoras * 10
+        alert(`Total a pagar ${total} dolares`)
+    } else if (turno.toLowerCase() == "nocturno") {
+        total = cantHoras * 15
+        alert(`Total a pagar ${total} dolares`)
+    } else {
+        alert("Error en los datos")
+    }
 }
+

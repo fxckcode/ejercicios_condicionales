@@ -7,14 +7,20 @@
 // Codifique un algoritmo que solicite el turno de trabajo y el número de horas trabajadas y
 // posteriormente calcule el valor a pagar.
 $turno = readline("Cual es su turno (diurno o nocturno): ");
-$cantHoras = intval(readline("Cual es su cantidad de horas: "));
+$cantHoras = readline("Cual es su cantidad de horas: ");
 $total = 0;
-if ($turno.strtolower() == 'diurno') {
-    $total = $cantHoras * 10;
-    echo "Cantidad a pagar ".$total;
-} elseif ($turno.strtolower() == 'nocturno') {
-    $total = $cantHoras * 15;
-    echo "Cantidad a pagar ".$total;
+
+if (is_numeric($cantHoras)) {
+    $cantHoras = floatval($cantHoras);
+    if (strtolower($turno) == 'diurno') {
+        $total = $cantHoras * 10;
+        echo "Cantidad a pagar ".$total;
+    } elseif (strtolower($turno) == 'nocturno') {
+        $total = $cantHoras * 15;
+        echo "Cantidad a pagar ".$total;
+    } else {
+        echo "Error en los datos";
+    }
 } else {
     echo "Error en los datos";
 }
