@@ -3,7 +3,7 @@ var edad = parseInt(prompt("¿Cuál es tu edad?"))
 
 if (isNaN(edad) || edad == 0) {
     alert("Por favor ingresar un numero valido")
-} else if (edad >= 18) {
+} else if (edad >= 18 && edad <= 100) {
     alert("Eres mayor de edad")
 } else if (edad <= 17) {
     alert("Eres menor de edad")

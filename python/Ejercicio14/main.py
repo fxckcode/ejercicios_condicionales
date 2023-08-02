@@ -10,7 +10,7 @@
 # Acorde a los datos recolectados identificar si el suelo es apto para la siembra café
 
 
-ph = input("Fosforo: ")
+ph = input("Acidez del suelo: ")
 materia_organica = input("Materia Organica: ")
 fosforo = input("Fosforo: ")
 calcio = input("Calcio: ")

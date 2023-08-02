@@ -5,7 +5,7 @@ if edad.isdigit():
     edad = int(edad)
     if edad == 0:
         print("Por favor ingresar un numero valido")
-    elif edad >= 18:
+    elif edad >= 18 and edad <= 100:
         print("Usted es mayor de edad")
     else:
         print("Usted es menor de edad")

@@ -10,7 +10,7 @@ var cal3 = parseFloat(prompt("Introduce la tercera calificación: "));
 var promedio = (cal1 + cal2 + cal3) / 3;
 if (isNaN(cal1) || isNaN(cal2) || isNaN(cal3)) {
     alert("Por favor ingresar un numero valido")
-} else if (promedio >= 70 ){
+} else if (promedio >= 70 && promedio <= 100 ){
     alert(`Aprobado, con un promedio de ${promedio.toFixed(1)}`);
 } else if (promedio < 70) {
     alert(`Reprobado, con un promedio de ${promedio.toFixed(1)}`);

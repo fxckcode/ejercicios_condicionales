@@ -13,7 +13,7 @@ if cal1.replace('.', '', 1).isdigit() and cal2.replace('.', '', 1).isdigit() and
     cal2 = float(cal2)
     cal3 = float(cal3)
     promedio = (cal1 + cal2 + cal3) / 3
-    if promedio >= 70:
+    if promedio >= 70 and promedio <= 100:
         print(f"Aprobado, con un promedio de {round(promedio, 1)}")
     else:
         print(f"Reprobado, con un promedio de {round(promedio, 1)}")
